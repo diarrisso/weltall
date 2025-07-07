@@ -1,0 +1,50 @@
+/*
+!.gitignore
+!wp-content/
+
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+wp-content/plugins/*
+!wp-content/plugins/weltall/
+!wp-content/plugins/woocommerce
+!wp-content/plugins/woocommerce-payments
+!wp-content/plugins/woocommerce-services
+
+wp-content/themes/*
+!wp-content/themes/mamadi/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpcs.xml
+.phpcs.xml.dist
+phpcs.xml
+phpcs.xml.dist
+.phpunit.result.cache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+*.swp
+*.tmp

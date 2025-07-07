@@ -1,0 +1,76 @@
+@use 'base' as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+
+  .weltall_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-lg;
+    margin: $spacing-lg 0;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-md;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+    }
+  }
+
+  .weltall_flex {
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: $spacing-lg;
+    box-shadow: 0 2px 8px $shadow-light;
+    transition: transform $transition-fast, box-shadow $transition-fast;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px $shadow-dark;
+      cursor: pointer;
+    }
+
+    h4 {
+      margin: 0 0 $spacing-md 0;
+      color: $primary-color;
+      font-size: 1.3em;
+      border-bottom: 2px solid $primary-color;
+      padding-bottom: $spacing-xs;
+      text-align: center;
+
+      @include mobile {
+        font-size: 1.2em;
+      }
+
+      @include small-mobile {
+        font-size: 1.1em;
+      }
+    }
+
+    @include mobile {
+      padding: $spacing-md;
+    }
+
+    @include small-mobile {
+      padding: 12px;
+    }
+  }
+
+  @include tablet {
+    padding: $spacing-md;
+  }
+
+  @include small-mobile {
+    padding: $spacing-sm;
+  }
+}

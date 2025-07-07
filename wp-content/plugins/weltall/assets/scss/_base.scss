@@ -1,0 +1,39 @@
+$primary-color: #0073aa !default;
+$danger-color: #dc3232 !default;
+$text-dark: #333 !default;
+$text-light: #666 !default;
+$border-color: #ddd !default;
+$white: #fff !default;
+$shadow-light: rgba(0, 0, 0, 0.1) !default;
+$shadow-dark: rgba(0, 0, 0, 0.15) !default;
+
+$spacing-xs: 8px !default;
+$spacing-sm: 10px !default;
+$spacing-md: 15px !default;
+$spacing-lg: 20px !default;
+
+$transition-fast: 0.2s ease !default;
+
+
+$tablet: 992px !default;
+$mobile: 768px !default;
+$small-mobile: 480px !default;
+
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: $small-mobile) {
+    @content;
+  }
+}

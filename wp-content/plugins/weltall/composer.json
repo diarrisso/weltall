@@ -1,0 +1,43 @@
+{
+    "name": "mamadi/weltall",
+    "description": "A custom WordPress plugin for Weltall",
+    "license": "GPL-2.0-or-later",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "weltall"
+    ],
+
+    "require": {
+        "php": ">=7.4",
+        "michelf/php-markdown": "^2.0"
+    },
+
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.1.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+    },
+
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+
+    "autoload": {
+        "psr-4": {
+            "weltall\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mamadi Diarrisso",
+            "email": "diarrisso49@gmail.com"
+        }
+    ]
+
+}

@@ -1,0 +1,64 @@
+.footer {
+  background: linear-gradient(135deg, #018072 0%, #34495e 100%);
+  color: white;
+  padding: 3rem 0 1rem;
+  margin-top: auto;
+  
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  &__section {
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #ecf0f1;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+    
+    ul {
+      list-style: none;
+      
+      li {
+        margin-bottom: 0.5rem;
+        
+        a {
+          color: #bdc3c7;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          position: relative;
+          
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3498db;
+            transition: width 0.3s ease;
+          }
+          
+          &:hover {
+            color: #3498db;
+            
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #34495e;
+    padding-top: 1rem;
+    text-align: center;
+    color: #95a5a6;
+  }
+}

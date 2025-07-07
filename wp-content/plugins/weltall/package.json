@@ -1,0 +1,29 @@
+{
+  "name": "weltall",
+  "version": "1.0.0",
+  "description": "A custom WordPress plugin for managing and displaying planet data",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-css",
+    "build-css": "node build-css.js",
+    "watch-css": "node watch-css.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:php": "vendor/bin/phpcs",
+    "lint:php:fix": "vendor/bin/phpcbf",
+    "lint": "eslint assets/js/*",
+    "lint:fix": "eslint --fix assets/js/*",
+    "lint-css": "stylelint 'assets/scss/**/*.scss'",
+    "lint-css:fix": "npm run lint-css -- --fix"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "weltall",
+    "planets"
+  ],
+  "author": "Mamadi Diarrisso",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "sass": "^1.32.0"
+  }
+}
